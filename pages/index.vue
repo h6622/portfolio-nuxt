@@ -1,17 +1,21 @@
 <template>
   <div :style="{backgroundImage: `url(${bgUrl})`}" class="bg">
-    <v-layout row wrap>
-      <v-flex xs12>
+    <v-layout align-content-center row fill-height>
+      <v-flex xs12 class="d-flex justify-center">
         h662
       </v-flex>
-      <v-flex>H662</v-flex>
-      <v-flex>H662</v-flex>
+      <v-flex xs12 class="d-flex justify-center">
+        h662
+      </v-flex>
+      <v-flex xs12 class="d-flex justify-center">
+        h662
+      </v-flex>
     </v-layout>
   </div>
 </template>
 
 <script>
-import bgUrl from '@/assets/images/notebook.jpg'
+import bgUrl from '@/assets/images/bg.jpg'
 
 export default {
   data () {
@@ -22,6 +26,8 @@ export default {
 
 <style lang="scss" scoped>
   .bg {
-    height: 1000px;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
   }
 </style>
