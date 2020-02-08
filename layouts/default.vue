@@ -1,9 +1,7 @@
 <template>
   <v-app>
-    <v-container>
-      <nav-bar />
-      <nuxt />
-    </v-container>
+    <nav-bar />
+    <nuxt />
   </v-app>
 </template>
 
@@ -18,7 +16,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  .container{
-    max-width: 960px;
-  }
+
 </style>
